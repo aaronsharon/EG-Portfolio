@@ -1,0 +1,5 @@
+{
+    "scripts": {
+      "compile-scss": "sass sass/styles.scss styles/styles.css"
+    }
+  }
