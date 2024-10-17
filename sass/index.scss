@@ -1,0 +1,483 @@
+@import './base/base.scss';
+body {
+  background-color: #fbf8cc !important;
+  a {
+    text-decoration: none !important;
+  }
+  span {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.con {
+  margin: 12px 0px;
+  .btn {
+    margin: 0px 0px 0px 0px;
+    i {
+      font-size: 18px;
+    }
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-link {
+      margin: 0 1rem;
+    }
+  }
+  .nav-bar-title-h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: $font-p-color;
+  }
+  @media (max-width: 767px) {
+    margin-top: 12px;
+    .nav-bar-title-h3 {
+      font-size: 38px;
+    }
+    margin-bottom: 0rem !important;
+    padding: 0% !important;
+  }
+}
+
+// main-dev code
+
+.main-dev-section {
+  margin-top: 12rem;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  line-height: normal;
+
+  @media (max-width: 768px) {
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 10rem !important;
+  }
+
+  .main-dev-row {
+    .main-dev-col-left {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        @media (max-width: 767px) {
+          font-size: 30px !important;
+          font-weight: 800 !important;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: $font-p-color;
+        font-weight: 700;
+        @media (max-height: 767px) {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+
+      .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
+
+      .resume-btn {
+        background-color: $tertiary-color;
+        margin: 2rem 0rem;
+        color: #474306;
+        width: 165px;
+        height: 48px;
+      }
+
+      .main-dev-col-left-p {
+        font-size: 28px;
+        font-weight: 800;
+        color: $font-p-color;
+      }
+
+      h1 {
+        font-size: 52px;
+        color: $primary-color; /* Replace with your actual color variable */
+        font-weight: bolder;
+      }
+
+      @media (max-width: 768px) {
+        .main-dev-col-left-p {
+          font-size: 24px;
+        }
+
+        .resume-btn {
+          width: 140px;
+          height: 40px;
+          text-align: center;
+          padding-bottom: 2px;
+        }
+      }
+    }
+
+    .main-dev-col-right {
+      margin-top: -4rem;
+
+      img {
+        border-radius: 80% 70%;
+        width: 70%;
+        height: auto;
+        max-width: 100%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+
+      @media (max-width: 768px) {
+        margin-top: 2rem;
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+// About Us
+
+.about-us-section {
+  margin-top: 12rem;
+  margin-left: 4rem;
+
+  .about-us-title {
+    h1 {
+      width: 341px;
+      height: 116px;
+      color: $tertiary-color;
+      font-size: 100px;
+      font-weight: 900;
+    }
+  }
+  .about-us-text-p {
+    padding-top: 2rem;
+    color: $primary-color;
+    width: 950px;
+    height: 132px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+.new-t {
+  text-align: justify;
+  padding-left: 5rem;
+}
+.about-us-experience {
+  margin: 6rem 4rem;
+  //   padding: 2rem 0rem;
+
+  img {
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 8rem !important;
+  }
+  .exp1-img {
+    margin: 3rem 0rem;
+  }
+  .span-timespan {
+    font-size: 16px;
+    text-align: end;
+  }
+  .exprin-right {
+    h3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $primary-color;
+      font-weight: 700;
+    }
+    p {
+      font-size: 16px;
+      color: $primary-color;
+      text-justify: inter-word;
+      text-align: justify;
+      padding: 1rem 0rem;
+    }
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .about-us-section {
+    margin: 10rem 1rem !important;
+
+    .about-us-title {
+      h1 {
+        font-size: 60px;
+        width: auto;
+        height: auto;
+      }
+    }
+    .about-us-text-p {
+      width: auto;
+      font-size: 18px;
+    }
+  }
+  .new-t {
+    padding-left: 1rem;
+  }
+  .about-us-experience {
+    margin: 6rem 1rem;
+    padding-top: 2rem !important;
+
+    img {
+      margin-right: 15rem !important;
+      width: 80px;
+      height: 80px;
+    }
+    .exp1-img {
+      margin: 1rem 0rem;
+    }
+    .exprin-right {
+      h3 {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      p {
+        font-size: 14px;
+        padding: 0.5rem 0rem;
+      }
+    }
+  }
+}
+
+// work section
+
+.work-section {
+  margin: 6rem 4rem;
+  h1 {
+    width: 341px;
+    height: 116px;
+    color: $tertiary-color;
+    font-size: 100px;
+    font-weight: 900;
+  }
+  p {
+    padding-top: 2rem;
+    color: $primary-color;
+    width: 950px;
+    height: 132px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .card-body-showcase {
+    p {
+      font-size: 16px;
+      justify-content: space-around;
+      width: auto;
+      padding: 2rem;
+      text-justify: inter-word;
+      text-align: justify;
+    }
+    .title-card-h1 {
+      font-size: 24px;
+      padding: 0rem 2rem;
+      color: $primary-color;
+      font-weight: 600;
+    }
+  }
+  .card-size {
+    height: 520px;
+    max-height: 550px;
+  }
+  .new-card {
+    padding-top: 12rem;
+    h2 {
+      font-size: 26px;
+      padding: 0rem 2rem;
+    }
+    button {
+      margin: 0rem 6rem;
+      background-color: $tertiary-color;
+      //   margin: 2rem 0rem;
+      color: #474306;
+      width: auto;
+      height: 48px;
+      border-radius: 8px;
+    }
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .work-section {
+    // margin: 4rem 1rem !important;
+
+    h1 {
+      font-size: 60px;
+      width: auto;
+      height: auto;
+    }
+    p {
+      width: auto;
+      font-size: 18px;
+    }
+  }
+  .card-body-showcase {
+    p {
+      font-size: 14px;
+      padding: 1rem;
+      // padding-bottom: 4rem !important;
+    }
+    .title-card-h1 {
+      font-size: 20px;
+      padding: 0rem 1rem;
+    }
+  }
+  .card-size {
+    margin: 1rem 0rem !important;
+    height: auto;
+    max-height: auto;
+    // margin-bottom: 2rem !important;
+  }
+  .new-card {
+    padding-top: 6rem;
+    h2 {
+      font-size: 22px;
+      padding: 0rem 1rem;
+    }
+    button {
+      margin: 0rem 1rem;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .work-section {
+    margin: 2rem 0.5rem;
+
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .card-body-showcase {
+    p {
+      font-size: 12px;
+      padding: 0.5rem;
+    }
+    .title-card-h1 {
+      font-size: 18px;
+      padding: 0rem 0.5rem;
+    }
+  }
+  .card-size {
+    height: auto;
+    max-height: none;
+  }
+  .new-card {
+    padding-top: 4rem;
+    h2 {
+      font-size: 20px;
+      padding: 0rem 0.5rem;
+    }
+    button {
+      margin: 0rem 1rem;
+      width: 100%;
+    }
+  }
+}
+
+// contact us
+
+.contact-main-sec {
+  margin: 4rem 4rem;
+  .contact-us-title {
+    margin-top: 2rem;
+    h1 {
+      width: 341px;
+      height: 116px;
+      color: $tertiary-color;
+      font-size: 100px;
+      font-weight: 900;
+    }
+  }
+  .contact-img {
+    margin-top: 4rem;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .contact-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .contact-right-sec {
+    color: $primary-color;
+    font-size: large;
+    font-weight: 600;
+  }
+
+  .btn-icon {
+    border-radius: 50%;
+    width: 60px;
+    padding: 2px;
+    justify-content: space-between;
+    margin: 2rem 8px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    background-color: whitesmoke;
+
+    i {
+      font-size: 40px;
+      text-align: center;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &:hover {
+      background-color: $tertiary-color;
+    }
+  }
+  .cont-email {
+    color: $font-p-color;
+    font-weight: 600;
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .contact-main-sec {
+    margin: 2rem 1rem;
+
+    .contact-us-title {
+      h1 {
+        font-size: 40px !important;
+        width: auto;
+        height: auto;
+      }
+    }
+    .contact-right-sec {
+      font-size: medium;
+    }
+    .btn-icon {
+      margin-left: 0rem !important;
+      width: 40px;
+      height: 30px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
