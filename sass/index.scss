@@ -18,6 +18,15 @@ body {
       font-size: 18px;
     }
   }
+  .btn-nav {
+    background-color: #F5EE84;
+    border: 1px solid #a1b08e;
+    &:hover {
+      cursor: pointer;
+      background-color: #F5EE84;
+      border: #a1b08e;
+    }
+  }
   .navbar-nav {
     display: flex;
     justify-content: center;
@@ -165,7 +174,7 @@ body {
 }
 .new-t {
   text-align: justify;
-  padding-left: 5rem;
+  padding-left: 2rem;
 }
 .about-us-experience {
   margin: 6rem 4rem;
